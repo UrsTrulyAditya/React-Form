@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useFormik } from 'formik'
-import Table from './table';
-import { useEffect } from 'react';
+import Table from './table'; 
 import axios from 'axios';
 const Form = () => {
     const [Data, setData] = useState([]);
@@ -27,17 +26,18 @@ const Form = () => {
             status: "",
             blood: ""
         },
-        onSubmit: (values) => {
+        onSubmit: (values,{resetForm}) => {
 
-            axios.post("https://json-server5.herokuapp.com/savedData", values).then(() => console.log("Posted"))
+            axios.post("https://json-server5.herokuapp.com/formData", values).then(() => console.log("Posted"))
             alert("submitted");
             getData();
-
-
+            resetForm({values:''})
+             
+ 
         }
     });
     const getData = () => {
-        axios.get("https://json-server5.herokuapp.com/savedData").then(({ data }) => {
+        axios.get("https://json-server5.herokuapp.com/formData").then(({ data }) => {
             setData(data)
         })
     }

@@ -1,7 +1,5 @@
 
-import React, { useState } from 'react'
-import { useEffect } from 'react';
-import axios from 'axios';
+import React  from 'react' 
 const Table = ({data}) => {
   
   return (
@@ -34,7 +32,25 @@ const Table = ({data}) => {
         <tbody> 
           {data ? data.map((each,i) => {
             return <tr key={i+1}>
+              <td>{i+1}</td>
               <td>{each.name}</td>
+              <td>{each.age}</td>
+              <td>{each.sex}</td>
+              <td>{each.mobile}</td>
+              <td>{each.govtId}</td>
+              <td>{each.guardian}</td>
+              <td>{each.email}</td>
+              <td>{each.emergency}</td>
+              <td>{each.address}</td>
+              <td>{each.state}</td>
+              <td>{each.city}</td>
+              <td>{each.country}</td>
+              <td>{each.pincode}</td>
+              <td>{each.occupation}</td>
+              <td>{each.religion}</td>
+              <td>{each.status}</td>
+              <td>{each.blood}</td>
+
             </tr>
           }) : ""} 
         </tbody>
