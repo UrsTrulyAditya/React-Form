@@ -1,0 +1,101 @@
+    const namehandleChange = (e) => {
+         
+        setData({name:e.target.value})
+    }
+    const agehandleChange = (e) => {
+         
+        setData({age:e.target.value})
+    }
+ 
+    const sexhandleChange = (e) => {
+         
+        setData({sex:e.target.value})
+    }
+    const gvtIdTypehandleChange = (e) => {
+         
+        setData({gvtIdType:e.target.value})
+    }
+    const gvtIdhandleChange = (e) => {
+         
+        setData({gvtId:e.target.value})
+    }
+    const mobilehandleChange = (e) => {
+         
+        setData({mobile:e.target.value})
+    }
+    const guardianhandleChange = (e) => {
+         
+        setData({guardian:e.target.value})
+    }
+    const emailhandleChange = (e) => {
+         
+        setData({email:e.target.value})
+    }
+    const emergencyhandleChange = (e) => {
+         
+        setData({emergency:e.target.value})
+    }
+    const addresshandleChange = (e) => {
+         
+        setData({address:e.target.value})
+    }
+    const statehandleChange = (e) => {
+         
+        setData({state:e.target.value})
+    }
+    const cityhandleChange = (e) => {
+         
+        setData({city:e.target.value})
+    }
+    const countryhandleChange = (e) => {
+         
+        setData({country:e.target.value})
+    }
+    const pincodehandleChange = (e) => {
+         
+        setData({pincode:e.target.value})
+    }
+    const occupationhandleChange = (e) => {
+         
+        setData({occupation:e.target.value})
+    }
+    const religionhandleChange = (e) => {
+         
+        setData({religion:e.target.value})
+    }
+    const statushandleChange = (e) => {
+         
+        setData({status:e.target.value})
+    }
+    const bloodhandleChange = (e) => {
+         
+        setData({blood:e.target.value})
+    }
+
+
+   const submitted=(e)=>{
+    e.preventDefault();
+    localStorage.setItem("data",JSON.stringify(data));
+
+    alert("Submitted")
+    setData({
+        name: "",
+        age: "",
+        sex: "",
+        gvtIdType: "",
+        gvtId: "",
+        mobile: "",
+        guardian: "",
+        email: "",
+        emergency: "",
+        address: "",
+        state: "",
+        city: "",
+        country: "",
+        pincode: "",
+        occupation: "",
+        religion: "",
+        status: "",
+        blood: ""
+    })
+   }

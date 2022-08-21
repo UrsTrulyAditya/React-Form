@@ -8,17 +8,31 @@ div{
   margin-bottom: 10px;
    
 }
+
+h3{
+  margin-left: 15px;
+}
 form{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 25px;
   border-radius: 15px;
   width: 80%;
+  text-align: left;
 }
 
 span{
   color: red;
 }
 
+table{
+  height: 100%;
+}
+
+ 
+form{
+  height: 100%;
+  margin-bottom: 150px;
+}
 button{
   height: 55px;
   width: 110px;
